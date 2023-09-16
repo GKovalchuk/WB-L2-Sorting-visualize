@@ -1,0 +1,46 @@
+<main>
+	<div class="visualize-area">
+		<canvas id="canvas">
+			Ваш браузер не поддерживает canvas. Попробуйте
+			обновить или сменить браузер
+		</canvas>
+		<div class="visualize-area__btn-container">
+			<button class="visualize-area__btn" id="begin">
+				Начать сортировку
+			</button>
+			<button id="pause" class="visualize-area__btn" data-pause="play" disabled>
+				Приостановить
+			</button>
+		</div>
+	</div>
+
+	<div class="params">
+		<div class="params-item">
+			<label for="sorts">Шрифт:</label>
+			<select id="sorts">
+				<option>Сортировка пузырьком</option>
+				<option>Сортировка выбором</option>
+				<option>Сортировка вставками</option>
+				<option>Быстрая сортировка</option>
+				<option>Сортировка кучей</option>
+			</select>
+			<span></span>
+		</div>
+		<div class="params-item">
+			<label for="arrLength">Размер массива:</label>
+			<input id="arrLength" type="number" min="10" max="500" value="40">
+			<p>элементов</p>
+			<span></span>
+			<p id="attentionText" class="attention-text" hidden>Максимум 500 элементов
+			</p>
+		</div>
+		<div class="params-item">
+			<label for="delayFactor">Коэффициент задержки:</label>
+			<input id="delayFactor" type="number" min="0" max="99750" value="250"
+				step="250">
+			<span></span>
+			<p id="delayFactorText" class="attention-text" hidden>Рекомендуемое
+				значение - 250</p>
+		</div>
+	</div>
+</main>
